@@ -3,3 +3,15 @@
 {
     text-align: center;
 }
+
+.bg-1
+{
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+.bg-2
+{
+    background-color: #474e5d;
+    color: #ffffff;
+}
