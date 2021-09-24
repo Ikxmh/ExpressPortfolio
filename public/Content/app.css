@@ -47,10 +47,27 @@ h6
     -webkit-box-shadow: 4px 3px 8px 1px #c5c5c5;
 }
 
+.border
+{
+    border: 1px solid white;
+    box-shadow: 4px 3px 8px 1px #c5c5c5;
+    -webkit-box-shadow: 4px 3px 8px 1px #c5c5c5;
+}
+
 body
 {
     background-color: #3d4349;
     color: #ffffff;
 }
 
+.orange
+{
+    color: orange;
+    text-align: center;
+}
+
+.cardbody
+{
+    background-color: #3d4349;
+}
 
