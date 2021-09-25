@@ -60,6 +60,11 @@ body
     color: #ffffff;
 }
 
+.card
+{
+    background-color: #3d4349;
+}
+
 .orange
 {
     color: orange;
@@ -71,3 +76,8 @@ body
     background-color: #3d4349;
 }
 
+.list-group-item
+{
+    background-color: #3d4349;
+    color: white;
+}
