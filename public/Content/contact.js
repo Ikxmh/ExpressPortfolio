@@ -28,10 +28,23 @@ function checkValueMissing()
         window.alert(msgError.message);
         return false;
     }
+}
+
+function validateName()
+{
 
 }
 
+if(window.addEventListener)
+    {
+        window.addEventListener("load", createEventListeners, false);
+    }
+    else if (window.attachEvent)
+    {
+        window.attachEvent("onload", createEventListeners);
+    } 
 
 
 
-console.log("hello");
+
+window.log("hello");
