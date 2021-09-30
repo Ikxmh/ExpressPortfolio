@@ -16,21 +16,21 @@ Date: September 30th, 2021
   <div class="row">
    
     <!--Found the structure online but modified it to my needs https://mdbootstrap.com/docs/b4/jquery/forms/contact/-->
-      <!--Grid column-->
+     
+    <!--Contact Me Section-->
       <div class="col-md-9 mb-md-0 mb-5">
         <form action="/home">
-              <!--Grid row-->
               <div class="row">
-                  <!--Grid column-->
+                  <!--Name-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
                         <label for="name" class="">Your name</label>
                           <input type="text" id="name" name="name" class="form-control" required>
                       </div>
                   </div>
-                  <!--Grid column-->
+                  
 
-                  <!--Grid column-->
+                  <!--Email-->
                   <div class="col-md-6">
                       <div class="md-form mb-0">
                         <label for="email" class="">Your email</label>
@@ -38,9 +38,8 @@ Date: September 30th, 2021
                       </div>
                   </div>
               </div>
-              <!--Grid row-->
 
-              <!--Grid row-->
+              <!--Subject-->
               <div class="row">
                   <div class="col-md-12">
                       <div class="md-form mb-0">
@@ -49,11 +48,9 @@ Date: September 30th, 2021
                       </div>
                   </div>
               </div>
-              <!--Grid row-->
 
-              <!--Grid row-->
+              <!--Message-->
               <div class="row">
-                  <!--Grid column-->
                   <div class="col-md-12">
                       <div class="md-form">
                         <label for="message">Your message</label>
@@ -63,16 +60,15 @@ Date: September 30th, 2021
               </div>
               
           
-          <!--Grid row-->
+          <!--Submit Button-->
           <div class="text-center text-md-left">
               <button class="btn btn-dark btn-sm" type="submit" name="submit">Submit</button>
           </div>
         </form>
       </div>
     
-      <!--Grid column-->
 
-      <!--Grid column-- Visuals for my contacts information-->
+      <!--Visuals for my contacts information-->
       <div class="col-md-3 text-center">
           <ul class="list-unstyled mb-0">
               <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -88,8 +84,5 @@ Date: September 30th, 2021
       </div>
   </div>
   <%- include partials/end_border.ejs %> 
-
-
-
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>
