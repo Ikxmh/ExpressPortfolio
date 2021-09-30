@@ -3,7 +3,16 @@
 
 <body>
 <div class>
-    <img class="banner" src="Assets/images/home_page_banner.jpg" width="75%"  alt="Banner">
+    <img class="banner" src="Assets/images/home_page_banner.jpg" width="65%"  alt="Banner">
+</div>
+
+<div>
+  <P></P>
+  <h4 class="orange">Welcome!</h4>
+  <%- include partials/start_border.ejs %>
+    <p class="center">Welcome to my Express Portifolio where you can find the information about me and my projects!</p>
+  <%- include partials/end_border.ejs %> 
+  <p></p>
 </div>
 <!--Mission Statement-->
 <div>
@@ -12,6 +21,17 @@
     <%- include partials/start_border.ejs %>
       <p class="center">To continue learning and refining the skills to try contributing myself in everything. </p>
     <%- include partials/end_border.ejs %> 
+    <P></P>
+</div>
+
+
+<!--Links to other pages-->
+<h4 class="orange">Links to other Pages</h4>
+<div class="center">
+  <a class="btn btn-dark btn-sm" href="/about">About Me</a>
+  <a class="btn btn-dark btn-sm" href="/projects">My Projects</a>
+  <a class="btn btn-dark btn-sm" href="/services">Services</a>
+  <a class="btn btn-dark btn-sm" href="/contact">Contact Me</a>
 </div>
 </body>
 
