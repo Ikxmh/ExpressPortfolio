@@ -1,16 +1,23 @@
-/* 
+/* custom css goes here 
 Filename: app.css
 Name: Ikamjot Singh Hundal
 StudentID: 301134374
 Date: September 30th, 2021
 */
+
+
+/* Navbars*/
 .display-4
 {
     text-align: center;
 }
 
+footer
+{
+    padding-top: 100px;
+}
 
-
+/* For Banner in HomePage*/
 .banner
 {
     
@@ -21,6 +28,8 @@ Date: September 30th, 2021
     box-shadow: 4px 3px 8px 1px #c5c5c5;
     -webkit-box-shadow: 4px 3px 8px 1px #c5c5c5;
 }
+
+/* Main parts of the website*/
 
 .border
 {
@@ -38,9 +47,9 @@ body
     color: #ffffff;
 }
 
-.card
+.center
 {
-    background-color: #4e5153;
+    text-align: center;
 }
 
 .orange
@@ -50,6 +59,13 @@ body
     text-align: center;
     padding: 5px;
 }
+
+/* For Card Titles*/
+.card
+{
+    background-color: #4e5153;
+}
+
 
 .cardbody
 {
@@ -62,16 +78,8 @@ body
     color: white;
 }
 
-.center
-{
-    text-align: center;
-}
 
-footer
-{
-    padding-top: 100px;
-}
-
+/* For Contact Me page*/
 .row
 {
     padding: 1%;
