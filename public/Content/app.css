@@ -1,35 +1,14 @@
-/* custom css goes here */
+/* 
+Filename: app.css
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: September 30th, 2021
+*/
 .display-4
 {
     text-align: center;
 }
 
-.bg-1
-{
-    background-color: #1abc9c;
-    color: #ffffff;
-}
-
-.bg-2
-{
-    background-color: #474e5d;
-    color: #ffffff;
-}
-
-.bg-3 {
-    background-color: #ffffff; 
-    color: #555555;
-  }
-
-.img-circle
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-}
 
 h6
 {
@@ -53,6 +32,8 @@ h6
     box-shadow: 4px 3px 8px 1px #c5c5c5;
     -webkit-box-shadow: 4px 3px 8px 1px #c5c5c5;
     background-color: #4e5153;
+    width: 80%;
+    margin: auto;
 }
 
 body
@@ -63,13 +44,15 @@ body
 
 .card
 {
-    background-color: #3d4349;
+    background-color: #4e5153;
 }
 
 .orange
 {
     color: orange;
+    text-shadow: 2px 2px 4px white;
     text-align: center;
+    padding: 5px;
 }
 
 .cardbody
@@ -91,4 +74,9 @@ body
 footer
 {
     padding-top: 100px;
+}
+
+.row
+{
+    padding: 1%;
 }

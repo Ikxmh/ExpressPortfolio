@@ -1,12 +1,23 @@
+<!--
+Filename: projects.ejs
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: September 30th, 2021
+-->
+
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
 
 <body>
+  <!--Projects!-->
+  <h2 class="orange">My Projects!</h2>
   <%- include partials/start_border.ejs %>
   <div class="card-group">
+
+    <!--Zelda-like-->
     <div class="card">
-        <img src="/Assets/images/zelda_clone_cover.png" class="card-img-top" alt="...">
+        <img src="/Assets/images/zelda_clone_cover.png" class="card-img-top" alt="zelda_clone_cover">
               <div class="card-body">
                 <h5 class="card-title">Zelda-like Project</h5>
                 <p class="card-text">This was an attempt at making a game similar to a title named "The Legend of Zelda: A Link to the Past."
@@ -19,8 +30,11 @@
               </div>
 
             </div>
+
+    <!--Origins Falls-->
+ 
             <div class="card">
-              <img src="/Assets/images/Origins_Falls.png" class="card-img-top" alt="...">
+              <img src="/Assets/images/Origins_Falls.png" class="card-img-top" alt="Origins_Falls">
               <div class="card-body">
                 <h5 class="card-title">Origins Falls</h5>
                 <p class="card-text">This is an ongoing group effort game project. 
@@ -29,8 +43,11 @@
               </div>
             </div>
 
+
+    <!--De-Tective-Noir-->
+
             <div class="card">
-              <img src="/Assets/images/Detechtive-Noir.png" class="card-img-top" alt="...">
+              <img src="/Assets/images/Detechtive-Noir.png" class="card-img-top" alt="De-Techtive-Noir">
               <div class="card-body">
                 <h5 class="card-title">De-Techtive-Noir</h5>
                 <p class="card-text">This was a group effort game project. 
@@ -41,7 +58,7 @@
               </div>
             </div>
           </div>
-        </div>
+        <%- include partials/end_border.ejs %> 
 </body>
 
 <%- include partials/bottom_nav.ejs %>

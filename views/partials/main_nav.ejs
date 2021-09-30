@@ -1,3 +1,9 @@
+  <!--
+Filename: main_nav.ejs
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: September 30th, 2021
+-->
   <!-- Main Nav-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -12,6 +18,8 @@
 
         
           <!--Took a slight detour in setting the nav link active and inactive: Thank to BootStrap and Audrey for helping me out-->
+
+          <!--Home Section-->
           <li class="nav-item">
             <% if (title == "Home") { %>
               <a class="nav-link active text success" aria-current="page" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
@@ -20,6 +28,7 @@
             <% } %>
           </li>
 
+          <!--About me Section-->
           <li class="nav-item">
             <% if (title == "About Me") { %>
               <a class="nav-link active text success" aria-current="page" href="/about"><i class="fas fa-lg fa-portrait"></i> About Me </a>
@@ -28,6 +37,7 @@
             <% } %>
           </li>
 
+          <!--My Projects Section-->
            <li class="nav-item">
             <% if (title == "My Projects") { %>
               <a class="nav-link active text success" aria-current="page" href="/projects"><i class="fas fa-lg fa-user-cog"></i> My Projects </a>
@@ -36,6 +46,7 @@
             <% } %>
           </li>
 
+          <!--Services Section-->
            <li class="nav-item">
             <% if (title == "Services") { %>
               <a class="nav-link active text success" aria-current="page" href="/services"><i class="fas fa-lg fa-cogs"></i> Services </a>
@@ -44,6 +55,7 @@
             <% } %>
           </li>
 
+          <!--Contact Section-->
            <li class="nav-item">
             <% if (title == "Contact") { %>
               <a class="nav-link active text success" aria-current="page" href="/contact"><i class="fas fa-lg fa-phone"></i> Contact Me </a>
