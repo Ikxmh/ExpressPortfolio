@@ -63,6 +63,15 @@ Date: September 30th, 2021
             <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone"></i> Contact Me </a>
             <% } %>
           </li>
+
+          <!--Contact Section-->
+           <li class="nav-item">
+            <% if (title == "Books") { %>
+              <a class="nav-link active text success" aria-current="page" href="/book-list"><i class="fas fa-book-reader"></i> Books </a>
+            <% } else { %> 
+            <a class="nav-link" href="/book-list"><i class="fas fa-book-reader"></i> Books </a>
+            <% } %>
+          </li>
           
       </div>
     </div>
