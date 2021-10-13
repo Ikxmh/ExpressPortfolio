@@ -9,6 +9,8 @@ let logger = require('morgan');
 // modules for authentication 
 let session = require('express-session');
 let passport = require('passport');
+
+
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
@@ -27,21 +29,6 @@ mongoDB.once('open', ()=>{
   console.log('Connected to MongoDB....');
 });
 
-// setup express session
-app.use(session({
-  secret: "SomeSecret",
-  saveUninitialized: false,
-  resave: false
-}));
-
-// initiaze flash
-app.use(flash());
-
-//initiaze passport
-app.use(passport.initialize());
-app.use(passport.session());
-
-
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let booksRouter = require('../routes/book');
@@ -59,9 +46,44 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../../public')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 
+
+
+// setup express session
+app.use(session({
+  secret: "SomeSecret",
+  saveUninitialized: false,
+  resave: false
+}));
+
+// initiaze flash
+app.use(flash());
+
+//initiaze passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+// pass word user config 
+
+// create a User Model Instance 
+
+let userModel = require('../models/user');
+let User = userModel.User;
+
+// implement a User Authentication Strategy 
+passport.use(User.createStrategy());
+
+
+// Serilize and and deserialize 
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/book-list', booksRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

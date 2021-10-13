@@ -27,7 +27,19 @@ router.get('/services', indexController.displayServicesPage);
 /* GET Contact page. */
 router.get('/contact', indexController.displayContactPage);
 
-/* GET Book page */
-router.get('/book', indexController.displayBooksPage);
+/* GET route for displaying Login Page */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST route for processing Login Page */
+router.post('/login', indexController.processLoginPage);
+
+/* GET route for displaying Register Page*/
+router.get('/register', indexController.displayRegisterPage);
+
+/* POST route for processing Register Page */
+router.post('/register', indexController.processRegisterPage);
+
+/* GET TO PERFORM User Logout */
+router.get('/logout', indexController.performLogOut);
 
 module.exports = router;
