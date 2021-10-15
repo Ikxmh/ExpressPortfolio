@@ -32,9 +32,9 @@ module.exports.displayContactPage = (req,res, next) =>
     res.render('index', { title: 'Contact' });
 }
 
-module.exports.displayBooksPage = (req,res, next) =>
+module.exports.displayContactsListPage = (req,res, next) =>
 {
-    res.render('index', { title: 'Books' });
+    res.render('index', { title: 'Contacts' });
 }
 
 module.exports.displayLoginPage = (req,res, next) => {
@@ -76,7 +76,7 @@ module.exports.processLoginPage = (req, res, next) =>
             {
                 return next(err);
             }
-            return res.redirect('/book-list');
+            return res.redirect('/business_contacts-list');
         });
     })(req, res, next); 
 }
@@ -136,7 +136,7 @@ module.exports.processRegisterPage = (req,res, next) =>
 
                 return passport.authenticate('local')(req,res, () =>
                 {
-                    res.redirect('/book-list')
+                    res.redirect('/business_contacts-list')
                 });
             }
         });

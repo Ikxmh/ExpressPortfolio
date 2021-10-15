@@ -1,4 +1,4 @@
-let mongoose = require('mongoose');
+/* let mongoose = require('mongoose');
 
 // create a model class 
 
@@ -13,4 +13,4 @@ let bookModel = mongoose.Schema({
     collection: "books"
 });
 
-module.exports = mongoose.model('Book', bookModel);
+module.exports = mongoose.model('Book', bookModel); */
