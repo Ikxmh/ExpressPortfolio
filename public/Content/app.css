@@ -59,6 +59,16 @@ body
     text-align: center;
     padding: 5px;
 }
+td
+{
+    background-color: #3d4349;
+    color: #ffffff;
+}
+th
+{
+    background-color: #3d4349;
+    color: #ffffff;
+}
 
 /* For Card Titles*/
 .card
