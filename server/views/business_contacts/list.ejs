@@ -1,6 +1,14 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 
+<!--
+Filename: end_border.ejs
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 16th, 2021
+-->
+
+
 <!--Main Content -->
 <body>
   <main class="container">
@@ -9,7 +17,7 @@
    
   <div class="row">
       <div class="offset-md-1 col-md-10">
-          <h1 class="orange">Contact</h1>
+          <h1 class="orange">Contact Lists</h1>
          
           <% if(typeof displayName == 'string' && displayName) { %>
             <div class="center">
@@ -22,19 +30,15 @@
               <!--Header Row-->
               <tr class="d-flex">
               <% if(typeof displayName == 'string' && displayName) { %>
-                <div class="border">
                   <th class="text-center col-4">Contact's Name</th>
                   <th class="text-center col-4">Contact's Number</th>
                   <th class="text-center col-2">Contact's Email Address</th>
                   <th class="text-center col-1"></th>
                   <th class="text-center col-1"></th>
-                </div>
                 <% } else { %>
-                  <div class="border">
                   <th class="text-center col-4">Contact's Name</th>
                   <th class="text-center col-4">Contact's Number</th>
                   <th class="text-center col-3">Contact's Email Address</th>
-                </div>
                 <% } %>
             </tr>
         
@@ -43,7 +47,6 @@
                 <tr class="d-flex">
                   
                 <% if(typeof displayName == 'string' && displayName) { %>
-                  <div class="border">
                     <td class="text-center col-4"><%= ContactList[count].contact_name %></td>
                     
                         <td class="text-center col-4"><%= ContactList[count].contact_number %></td>
@@ -58,13 +61,10 @@
                           <a href="/business_contacts-list/delete/<%= ContactList[count]._id%>" class="btn btn-danger">
                           <i class="fas fa-trash-alt"></i>Delete</a>
                         </td>
-                      </div>
                 <% } else { %>
-                      <div class="border">
                         <td class="text-center col-4"><%= ContactList[count].contact_name %></td>
                         <td class="text-center col-4"><%= ContactList[count].contact_number %></td>
                         <td class="text-center col-3"><%= ContactList[count].contact_email %></td>
-                      </div>
                         
                 <% } %>   
                 </tr>

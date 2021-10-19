@@ -1,3 +1,10 @@
+/*
+Filename: user.js
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 16th, 2021
+*/
+
 // require modules for the User Model
  let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

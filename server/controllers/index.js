@@ -1,3 +1,10 @@
+/*
+Filename: index.js
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 15th, 2021
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -7,6 +14,8 @@ let passport = require('passport');
 let UserModel = require('../models/user');
 let User = UserModel.User; // alias
 
+
+// path to pages 
 module.exports.displayHomePage = (req, res, next) =>
 {
     res.render('home', {title: 'Home', displayName: req.user ? req.user.displayName : ''}); 

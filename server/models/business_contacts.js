@@ -1,3 +1,11 @@
+/*
+Filename: business_contacts.js
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 16th, 2021
+*/
+
+
 let mongoose = require('mongoose');
 
 // create a model class 

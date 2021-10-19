@@ -1,11 +1,19 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 
+<!--
+Filename: end_border.ejs
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 16th, 2021
+-->
+
 <div class="container">
     <div class="row">
         <div class="offset-md-4 col-md-9">
         <h1><%= title %></h1>
             <form class="form" method="post">
+            <!--Contact Name-->
                 <div class="form group">
                     <label for="nameTextField">Contact Name</label>
                     <input type="text" class="form control"
@@ -14,6 +22,7 @@
                     name="contact_name" required>
                 </div>
 
+                <!--Contact Number-->
                 <div class="form group">
                     <label for="contactNumberTextField">Contact Number</label>
                     <input type="text" class="form control"
@@ -22,6 +31,7 @@
                     name="contact_number" required>
                 </div>
 
+                <!--Contact Email-->
                 <div class="form group">
                     <label for="contactEmailTextField">Contact Email</label>
                     <input type="text" class="form control"
@@ -30,6 +40,7 @@
                     name="contact_email" required>
                 </div>
 
+                <!--Buttons-->
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
 

@@ -1,3 +1,10 @@
+/*
+Filename: business_contacts.js
+Name: Ikamjot Singh Hundal
+StudentID: 301134374
+Date: October 16th, 2021
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -5,8 +12,7 @@ let mongoose = require('mongoose');
 // create a reference to the model
 let Business_Contacts = require('../models/business_contacts');
 
-module.exports.displayContactsList = (req,res,next) =>
-{
+module.exports.displayContactsList = (req,res,next) => {
     Business_Contacts.find((err, contactList) => {
         if(err)
         {
@@ -15,14 +21,23 @@ module.exports.displayContactsList = (req,res,next) =>
         else
         {
             //console.log(BookList);
+            let list = []
 
+            for(let fillIn = 0; fillIn<contactList.length; fillIn++)
+            {
+                 list.push(contactList[fillIn]);
+            } 
+            list.sort((a,b) => (a.contact_email > b.contact_email) ? 1 : -1);
+
+            
             res.render('business_contacts/list', 
             {title: 'Contacts', 
-            ContactList: contactList, 
-            displayName: req.user ? req.user.displayName : ''});      
+            ContactList: list, 
+            displayName: req.user ? req.user.displayName : ''}); 
         }
     });
 }
+
 
 module.exports.displayAddPage = (req, res, next) => {
     res.render('business_contacts/add', {title: 'Add Contact', 
