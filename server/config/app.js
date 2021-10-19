@@ -31,7 +31,6 @@ mongoDB.once('open', ()=>{
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-//let booksRouter = require('../routes/book');
 let businessContactsRouter = require('../routes/business_contacts');
 
 let app = express();
@@ -63,7 +62,6 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
-// pass word user config 
 
 // create a User Model Instance 
 
@@ -83,7 +81,6 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-//app.use('/book-list', booksRouter);
 app.use('/business_contacts-list', businessContactsRouter);
 
 // catch 404 and forward to error handler

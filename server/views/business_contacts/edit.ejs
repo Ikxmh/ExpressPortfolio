@@ -12,30 +12,37 @@
                     id="nameTextField"
                     placeholder="Enter Contact Name"
                     name="contact_name" 
-                    value="<% business_contacts.contact_name %>"
+                    value="<%= contact.contact_name %>"
                     required>
                 </div>
-                    <div class="form group">
+
+                <div class="form group">
                     <label for="contactNumberTextField">Contact Number</label>
                     <input type="text" class="form control"
                     id="numberTextField"
                     placeholder="Enter the Contact Number"
                     name="contact_number" 
-                    value="<% business_contacts.contact_number %>"
+                    value="<%= contact.contact_number %>"
                     required>
                 </div>
+
                  <div class="form group">
                     <label for="contactEmailTextField">Contact Email</label>
                     <input type="text" class="form control"
                     id="publishedTextField"
                     placeholder="Enter Contact Email"
                     name="contact_email" 
-                    value="<% business_contacts.contact_email %>"
+                    value="<%= contact.contact_email %>"
                     required>
-                </div>
+                 </div>
+
+                    <!--Submit Button-->
                     <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
-
+                    <!--Delete Button-->
+                    <a href="/business_contacts-list/delete/<%= contact._id%>" class="btn btn-danger">
+                        <i class="fas fa-trash-alt"></i>Delete</a>
+                    <!--Cancel Button-->
                     <a href="/business_contacts-list" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
         </form>
