@@ -10,13 +10,14 @@ Date: October 16th, 2021
 -->
 <div class="container">
     <div class="row">
-        <div class="offset-md-4 col-md-9">
-        <h1><%= title %></h1>
+        <div class="center">
+        <h1 class="orange"><%= title %></h1>
             <form class="form" method="post">
-
+                <div class="border">
                 <!--Contact Name-->
                 <div class="form group">
-                    <label for="nameTextField">Contact Name</label>
+                    <br>
+                    <label for="nameTextField">Contact Name: </label>
                     <input type="text" class="form control"
                     id="nameTextField"
                     placeholder="Enter Contact Name"
@@ -24,10 +25,9 @@ Date: October 16th, 2021
                     value="<%= contact.contact_name %>"
                     required>
                 </div>
-
                 <!--Contact Number-->
                 <div class="form group">
-                    <label for="contactNumberTextField">Contact Number</label>
+                    <label for="contactNumberTextField">Contact Number: </label>
                     <input type="text" class="form control"
                     id="numberTextField"
                     placeholder="Enter the Contact Number"
@@ -38,7 +38,7 @@ Date: October 16th, 2021
 
                 <!--Contact Email-->
                  <div class="form group">
-                    <label for="contactEmailTextField">Contact Email</label>
+                    <label for="contactEmailTextField">Contact Email: </label>
                     <input type="text" class="form control"
                     id="publishedTextField"
                     placeholder="Enter Contact Email"
@@ -46,7 +46,7 @@ Date: October 16th, 2021
                     value="<%= contact.contact_email %>"
                     required>
                  </div>
-
+                 <br>
                     <!--Submit Button-->
                     <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
@@ -57,6 +57,7 @@ Date: October 16th, 2021
                     <a href="/business_contacts-list" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
         </form>
+    </div>
         </div>
     </div>
 </div>

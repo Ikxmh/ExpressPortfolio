@@ -10,12 +10,15 @@ Date: October 16th, 2021
 
 <div class="container">
     <div class="row">
-        <div class="offset-md-4 col-md-9">
-        <h1><%= title %></h1>
+        <div class="center">
+        <h1 class="orange"><%= title %></h1>
+        <div class="border">
+            <br>
             <form class="form" method="post">
             <!--Contact Name-->
                 <div class="form group">
-                    <label for="nameTextField">Contact Name</label>
+                    <label for="nameTextField">Contact Name: </label>
+                    
                     <input type="text" class="form control"
                     id="nameTextField"
                     placeholder="Enter Contact Name"
@@ -24,22 +27,22 @@ Date: October 16th, 2021
 
                 <!--Contact Number-->
                 <div class="form group">
-                    <label for="contactNumberTextField">Contact Number</label>
+                    <label for="contactNumberTextField">Contact Number: </label>
                     <input type="text" class="form control"
                     id="numberTextField"
-                    placeholder="Enter the Contact Number"
+                    placeholder="Enter Contact Number "
                     name="contact_number" required>
                 </div>
 
                 <!--Contact Email-->
                 <div class="form group">
-                    <label for="contactEmailTextField">Contact Email</label>
+                    <label for="contactEmailTextField">Contact Email: </label>
                     <input type="text" class="form control"
                     id="publishedTextField"
                     placeholder="Enter Contact Email"
                     name="contact_email" required>
                 </div>
-
+                <br>
                 <!--Buttons-->
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
@@ -48,6 +51,7 @@ Date: October 16th, 2021
                         <i class="fas fa-undo"></i> Cancel</a>
             
         </form>
+    </div>
         </div>
 
     </div>
