@@ -9,6 +9,8 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
+let jwt = require('jsonwebtoken');
+
 // create a reference to the model
 let Business_Contacts = require('../models/business_contacts');
 
